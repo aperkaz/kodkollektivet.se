@@ -31,6 +31,20 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+
+
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
 ol, ul {
@@ -3340,8 +3354,18 @@ input, select, textarea {
 
 /* Banner */
 
+	.animated-image{
+		transition: .3s ease-in;
+		filter: grayscale(80%);
+	}
+
+	.animated-image:hover{
+		transition: .3s ease-in;
+		filter: grayscale(0%);
+	}
+
 	#banner {
-		padding: 10em 0 4.75em 0 ;
+		padding: 8em 0 4.75em 0 ;
 	}
 
 		#banner .inner {
